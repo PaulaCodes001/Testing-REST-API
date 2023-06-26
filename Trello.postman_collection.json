@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "8e659b64-b972-4d8b-8831-9abd33ea8198",
+		"name": "Trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20441859"
+	},
+	"item": [
+		{
+			"name": "Create a new board",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=Tablica z API&key=644a2680e778b55133dc68cc0ac754e7&token=ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tablica z API"
+						},
+						{
+							"key": "key",
+							"value": "644a2680e778b55133dc68cc0ac754e7"
+						},
+						{
+							"key": "token",
+							"value": "ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show a list of boards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/members/me/boards?key=644a2680e778b55133dc68cc0ac754e7&token=ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"members",
+						"me",
+						"boards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "644a2680e778b55133dc68cc0ac754e7"
+						},
+						{
+							"key": "token",
+							"value": "ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a list on a board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/640f52931229ed02159ff09f/lists?key=644a2680e778b55133dc68cc0ac754e7&token=ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13&name=W trakcie testów",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"640f52931229ed02159ff09f",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "644a2680e778b55133dc68cc0ac754e7"
+						},
+						{
+							"key": "token",
+							"value": "ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13"
+						},
+						{
+							"key": "name",
+							"value": "W trakcie testów"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show available lists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/640f52931229ed02159ff09f/lists?key=644a2680e778b55133dc68cc0ac754e7&token=ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"640f52931229ed02159ff09f",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "644a2680e778b55133dc68cc0ac754e7"
+						},
+						{
+							"key": "token",
+							"value": "ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new card",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=64792c08887dac185b16398f&key=644a2680e778b55133dc68cc0ac754e7&token=ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13&name=Nie działa system logowania",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "64792c08887dac185b16398f"
+						},
+						{
+							"key": "key",
+							"value": "644a2680e778b55133dc68cc0ac754e7"
+						},
+						{
+							"key": "token",
+							"value": "ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13"
+						},
+						{
+							"key": "name",
+							"value": "Nie działa system logowania"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show a list of created cards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/640f52931229ed02159ff09f/cards?key=644a2680e778b55133dc68cc0ac754e7&token=ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13&name=Nie działa system logowania",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"640f52931229ed02159ff09f",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "644a2680e778b55133dc68cc0ac754e7"
+						},
+						{
+							"key": "token",
+							"value": "ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13"
+						},
+						{
+							"key": "name",
+							"value": "Nie działa system logowania"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update your card",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/64792fbc92e2106f875fba70?key=644a2680e778b55133dc68cc0ac754e7&token=ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13&name=Nie działa system rejestracji&desc=Paula testuje Rest API",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"64792fbc92e2106f875fba70"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "644a2680e778b55133dc68cc0ac754e7"
+						},
+						{
+							"key": "token",
+							"value": "ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13"
+						},
+						{
+							"key": "name",
+							"value": "Nie działa system rejestracji"
+						},
+						{
+							"key": "desc",
+							"value": "Paula testuje Rest API"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a card",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/64792fbc92e2106f875fba70?key=644a2680e778b55133dc68cc0ac754e7&token=ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"64792fbc92e2106f875fba70"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "644a2680e778b55133dc68cc0ac754e7"
+						},
+						{
+							"key": "token",
+							"value": "ATTA924510ec00203cebedc85aa7f5e0871fa42848efe1cc488da9df1ddbdfb6a66c2D146F13"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
